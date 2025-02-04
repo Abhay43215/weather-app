@@ -1,4 +1,3 @@
-# weather-app
 # Weather App Landing Page
 
 ## Overview
