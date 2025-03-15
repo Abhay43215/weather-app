@@ -18,7 +18,7 @@ The Weather App Landing Page is a visually appealing and responsive webpage that
 ### Steps
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/weather-app-landing.git
+   git clone https://github.com/Abhay4321/weather-app-landing.git
    cd weather-app-landing
    ```
 2. Open `index.html` in a browser:
