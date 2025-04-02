@@ -13,6 +13,7 @@ The Weather App Landing Page is a visually appealing and responsive webpage that
 ## Technologies Used
 - HTML5
 - CSS3 (including Flexbox and Grid for layout, and animations for effects)
+- scriptjs
 
 ## Installation
 ### Steps
