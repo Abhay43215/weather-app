@@ -16,6 +16,54 @@
 .weather-container{
     color : rgb(255, 250, 250);
 }
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .container{
+      width:100%;
+      height:100vh;
+      background: linear-gradient(135deg, #c9b2d6, #4e60a1);
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      flex-direction: column;
+      overflow: hidden;
+  }
+  .weather-container{
+      color: white;
+      background: rgba(255, 255, 255, 0.1);
+    
+      border-radius: 20px;
+      padding: 2rem;
+      width: 90%;
+      max-width: 400px;
+      text-align: center;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+      animation: fadeIn 1s ease-in-out;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  
+  @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+  }
+  
+  .weather-icon {
+      font-size: 5rem;
+      margin-bottom: 1rem;
+      color: #f8d568;
+      animation: float 3s infinite ease-in-out;
+  }
+  
+  @keyframes float {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0px); }
+  }
+  
   .temp{
       font-size: 4.5rem;
       font-weight: bold;
