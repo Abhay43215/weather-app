@@ -10,41 +10,52 @@
  </head>
  <body>
     <div class="container">
-
-     <div class=" weather_container">
-           <div class="temp">
-                  <p>20<sup>o</sup>F</p>
-              </div>
-
-              <div class="time_location">
-               <p>delhi</p>
-               <p>6:15 - monday <br>2025-01-27</p>
-              </div>
-
-              <div class="condition">
-               <p></p>
-
-               <p>mist</p>
-
-
-
-              </div>
-
-
-           </div>
-           <nav>
-                 <form>
-                       <input type='text' placeholder="search for a location" class='search_area'/><br>
-                       <button type="submit">search button</button>         
-
-                 </form>
-
-
-
-           </nav>
-
-
-     </div>
-    
- </body>   
- </html>   
+        <div class="weather_container">
+            <div class="weather-icon">
+                <i class="fas fa-cloud-sun"></i>
+            </div>
+            <div class="temp">
+                <p>20<sup>o</sup>F</p>
+            </div>
+            <div class="time_location">
+                <p>Delhi</p>
+                <p>6:15 - Monday <br>2025-01-10</p>
+            </div>
+            <div class="condition">
+                <p>Feels like: 22°F</p>
+                <p>Mist</p>
+            </div>
+            <div class="weather-details">
+                <div class="detail">
+                    <i class="fas fa-wind"></i>
+                    <span>5 mph</span>
+                </div>
+                <div class="detail">
+                    <i class="fas fa-tint"></i>
+                    <span>65%</span>
+                </div>
+                <div class="detail">
+                    <i class="fas fa-sun"></i>
+                    <span>UV: 2</span>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <form>
+                <div class="search-container">
+                    <input type='text' placeholder="Search for a location" class='search_area'/>
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </div>
+                <div class="toggle-container">
+                    <label class="switch">
+                        <input type="checkbox" id="temp-toggle">
+                        <span class="slider round"></span>
+                    </label>
+                    <span>°C / °F</span>
+                </div>
+            </form>
+        </nav>
+    </div>
+    <script src="script.js"></script>
+</body>   
+</html>   
