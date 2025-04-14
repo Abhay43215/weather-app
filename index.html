@@ -6,57 +6,83 @@
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>Weather app</title>
      <link rel="stylesheet" href="style.css"/>
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
-</head>
-     
-<body>
-    <div class="container">
-        <div class="weather_container">
-            <div class="weather-icon">
-                <i class="fas fa-cloud-sun"></i>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <!-- Background animations -->
+            <div class="background">
+                <div class="cloud cloud1"></div>
+                <div class="cloud cloud2"></div>
+                <div class="cloud cloud3"></div>
+                <div class="stars"></div>
             </div>
-            <div class="temp">
-                <p>20<sup>o</sup>F</p>
-            </div>
-            <div class="time_location">
-                <p>Delhi</p>
-                <p>6:15 - Monday <br>2025-01-10</p>
-            </div>
-            <div class="condition">
-                <p>Feels like: 22°F</p>
-                <p>Mist</p>
-            </div>
-            <div class="weather-details">
-                <div class="detail">
-                    <i class="fas fa-wind"></i>
-                    <span>5 mph</span>
+            
+            <div class="card weather_container">
+                <div class="weather-header">
+                    <div class="weather-icon">
+                        <i class="fas fa-cloud-sun"></i>
+                    </div>
+                    <div class="temp">
+                        <p>20<sup>o</sup>F</p>
+                    </div>
                 </div>
-                <div class="detail">
-                    <i class="fas fa-tint"></i>
-                    <span>65%</span>
+                
+                <div class="time_location">
+                    <h2>Delhi</h2>
+                    <p>6:15 - Monday <br>2025-01-10</p>
                 </div>
-                <div class="detail">
-                    <i class="fas fa-sun"></i>
-                    <span>UV: 2</span>
+                
+                <div class="condition">
+                    <p>Feels like: 22°F</p>
+                    <p class="weather-description">Mist</p>
+                </div>
+                
+                <div class="weather-details">
+                    <div class="detail">
+                        <i class="fas fa-wind"></i>
+                        <div class="detail-info">
+                            <span class="detail-value">5 mph</span>
+                            <span class="detail-label">Wind</span>
+                        </div>
+                    </div>
+                    <div class="detail">
+                        <i class="fas fa-tint"></i>
+                        <div class="detail-info">
+                            <span class="detail-value">65%</span>
+                            <span class="detail-label">Humidity</span>
+                        </div>
+                    </div>
+                    <div class="detail">
+                        <i class="fas fa-sun"></i>
+                        <div class="detail-info">
+                            <span class="detail-value">UV: 2</span>
+                            <span class="detail-label">UV Index</span>
+                        </div>
+                    </div>
                 </div>
             </div>
+            
+            <nav class="card search-card">
+                <form>
+                    <div class="search-container">
+                        <input type='text' placeholder="Search for a location" class='search_area' aria-label="Search for a location"/>
+                        <button type="submit" class="search-btn" aria-label="Search"><i class="fas fa-search"></i></button>
+                    </div>
+                    <div class="toggle-container">
+                        <label class="switch" for="temp-toggle">
+                            <input type="checkbox" id="temp-toggle" aria-label="Toggle temperature unit">
+                            <span class="slider round"></span>
+                        </label>
+                        <span class="toggle-label">°C / °F</span>
+                    </div>
+                </form>
+            </nav>
+            
+            <footer class="created-by">
+                <p>Created with <i class="fas fa-heart"></i> by Weather App</p>
+            </footer>
         </div>
-        <nav>
-            <form>
-                <div class="search-container">
-                    <input type='text' placeholder="Search for a location" class='search_area'/>
-                    <button type="submit"><i class="fas fa-search"></i></button>
-                </div>
-                <div class="toggle-container">
-                    <label class="switch">
-                        <input type="checkbox" id="temp-toggle">
-                        <span class="slider round"></span>
-                    </label>
-                    <span>°C / °F</span>
-                </div>
-            </form>
-        </nav>
-    </div>
-    <script src="script.js"></script>
-</body>   
+        <script src="script.js"></script>
+    </body>   
 </html>   
